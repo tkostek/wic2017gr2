@@ -1,0 +1,35 @@
+\documentclass[zad,zawodnik,utf8]{sinol}
+\usepackage{graphicx}
+    \title{Regularność}
+    \id{reg}
+    \signature{tkos-kas}
+    \author{Tomek Kościuszko}
+
+    \pagestyle{fancy}
+    \iomode{stdin}
+    \konkurs{\small{Warsztaty Informatyczne 2017 - grupa 2}}
+
+%     \day{Dzień 123}
+    \date{25.12.2222}
+
+    \RAM{256}
+
+\begin{document}
+\begin{tasktext}%
+    Regularność to podstawa w każdym sporcie, a już szczególnie jeśli chodzi o Frisbee. Ćwicząc precyzję w rzucaniu i łapaniu należy dbać o to aby każdego dnia wykonywać podobną liczbę powtórzeń. Przyjmijmy, że profesjonalny trening trwa $n$ dni, gdzie wykonywanych jest kolejno $a_{1}, a_{2},...,a_{n}$ powtórzeń. Powiemy, że program treningowy jest regularny, a przez to najbardziej efektywny, jeśli dla każdego $i \leq n - 1$ zachodzi $|a_{i} - a_{i + 1}| \leq 3$ oraz dla każdego $i \leq n - 2$ zachodzi $|a_{i} - a_{i + 2}| \leq 5$. Dodatkowo niezalecane jest wykonanie więcej niż $100$ powtórzeń w ciągu jednego dnia.
+
+    Trener Jacek poświęcił swój cenny czas i ułożył idealny program treningowy dla klasy 3A. Niestety pewnien niezdarny uczeń wylał kubek kawy na jego notes, w skutek czego niektóre wartości $a_{i}$ zostały zamazane. Pomóż terenerowi i policz na ile możliwych sposobów można odtworzyć ciąg, tak aby zachować jego regularność. Wynik należy podać modulo $10^9+7$.
+
+\section{Wejście}
+    W pierwszym wierszu podana jest liczba elementów ciągu $3\leq n\leq 1000$.
+    W kolejnym wierszu danych jest $n$ liczb - elementy ciągu $a_{i}$, gdzie $-1\leq a_{i}\leq 100$. $-1$ oznacza zamazaną wartość, każda inna liczba to ustalony element ciągu.
+
+\section{Wyjście}
+    Reszta z dzielenia liczby kombinacji przez $10^9+7$.
+
+
+\makeexample{0}
+
+
+\end{tasktext}
+\end{document}
