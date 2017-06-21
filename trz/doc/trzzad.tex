@@ -1,0 +1,37 @@
+\documentclass[zad,zawodnik,utf8]{sinol}
+\usepackage{graphicx}
+    \title{Trzy Źródła}
+    \id{trz}
+    \signature{tkos-kas}
+    \author{Tomek Kościuszko}
+
+    \pagestyle{fancy}
+    \iomode{stdin}
+    \konkurs{\small{Warsztaty Informatyczne 2017 - grupa 2}}
+
+%     \day{Dzień 123}
+    \date{25.12.2222}
+
+    \RAM{256}
+
+\begin{document}
+\begin{tasktext}%
+    Rok 2000 BC, wódz OG III stanął przed problemem przeludnienia w swojej wiosce. Dostępne źródła pożywienia wyczerpują się i trzeba znaleźć nowe miejsce, gdzie będzie można wybudować kolonię i przenieść tam część mieszkańców wioski. Wraz ze swoją radą plemienną wódz wybrał teren w kształcie kwadratu o boku 10km, na którym znajdują się trzy wystarczające źródła pożywienia. Miejsce jest dobre do kolonizacji o ile znajduje się nie dalej niż $R$ kilometrów od najbliższego źródła, w obrębie wyznaczonego terenu, tzn obie współrzędnę są nieujemne i nie większe niż 10.
+
+    Znając lokalizaję trzech źródeł w układzie współrzednych, wyznacz pole figury złożonej ze wszystkich punktów na mapie zdatnych do zamieszkania.
+
+\section{Wejście}
+    W pierwszym wierszu podana jest liczba całkowita $0 \leq R \leq 10$ - pożądana odległość od najbliższego punktu zaopatrzenia.
+    W następnych trzech wierszach podane są współrzędne każdego ze źródeł: $0 \leq x_{i}, y_{i} \leq 10$.
+
+\section{Wyjście}
+    Należy podać szukane pole z dokładnością do $0.1$ km$^2$, wolno się pomylić maksymalnie o $0.1$ km$^2$.
+
+
+\makeexample{0a}
+
+\makeexample{0b}
+
+
+\end{tasktext}
+\end{document}

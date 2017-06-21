@@ -1,0 +1,14 @@
+# MODE=(red|opr|wer)
+MODE=wer    # nalezy to zaktualizowac
+ID=kas
+SIG=tkos-kas
+
+#
+# Ograniczenia systemowe dla rozwiazan
+#
+TIMELIMIT = 5         # liczba sekund
+SLOW_TIMELIMIT = 5    # liczba sekund dla rozwiazan nieoptymalnych
+MEMLIMIT  = 266000     # limit pamieci (np. 33000, 66000, 130000, 260000)
+
+# Sciezka do oitimetoola - do komend oirun.
+OI_TIME = ~/accek-oitimetool-bin-3e376fc/oitimetool
