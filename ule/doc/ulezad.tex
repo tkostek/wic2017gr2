@@ -1,0 +1,34 @@
+\documentclass[zad,zawodnik,utf8]{sinol}
+\usepackage{graphicx}
+    \title{Ulewa}
+    \id{ule}
+    \signature{tkos-kas}
+    \author{Tomek Kościuszko}
+
+    \pagestyle{fancy}
+    \iomode{stdin}
+    \konkurs{\small{Warsztaty Informatyczne 2017 - grupa 2}}
+
+%     \day{Dzień 123}
+    \date{25.12.2222}
+
+    \RAM{256}
+
+\begin{document}
+\begin{tasktext}%
+    Według prognoz pogody, w najbliższym czasie przez Bajtocję ma przejść ulewa stulecia. Prawie na pewno niektóre miasteczka zostaną podtopione. Bajtocja jest bardzo długim i wąskim państwem, znajdującym się w kotlinie, co oznacza, że ze wszystkich stron jest otoczona górami. Przez całe państwo przebiega główna droga, wzdłuż której rozmieszczonych jest $n$ miasteczek. Naturalne jest, że w momencie gdy zalane zostaje miasteczko $i$ istnieje niebezpieczeństwo, że woda przedostanie się do miasteczek $i - 1$ oraz $i + 1$. Przyjmijmy, że ulewa rozpętała się nad miastem o numerze $a$. Znając wysokości terenu wzdłuż całej drogi, policz ile wody musi spaść, aby powódź dotarła do miasteczka $b$.
+
+\section{Wejście}
+    W pierwszym wierszu podane są trzy liczby całkowite. Liczba Bajtockich miasteczek $1 \leq n \leq 10^6$ oraz numery miasteczek $a, b\leq n$.
+    W drugim wierszu podane jest $n$ liczb: $0 \leq h_{1}, h_{2}, ... h_{n} \leq 10^6$ oznaczających wysokość nad poziomem morza (w mm) w miejscu, w którym znajduje się miasto $i$. Dla każdej pary $i \neq j$ zachodzi $h_{i} \neq h_{j}$.
+
+\section{Wyjście}
+    Zakładając, że miasteczka mają jednakowe rozmiary, a ziemia jest idealnie płaska w obrębie każdego miasteczka, policz ile mm wody musi spaść w miasteczku $a$, aby zalać miasteczko $b$.
+    Przyjmujemy, że na lewo od miasteczka $1$ oraz na prawo od miasteczka $n$ znajdują się bardzo wysokie góry, które uniemożliwiają wylanie się wody.
+
+
+\makeexample{0}
+
+
+\end{tasktext}
+\end{document}
