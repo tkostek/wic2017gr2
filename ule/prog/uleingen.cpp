@@ -145,7 +145,7 @@ void testGroup(const vector<TestCase>& cases)
     for(int i = 0; i < (int) cases.size(); ++i)
     {
         stringstream ss;
-        ss << "reg"; // except here
+        ss << "ule"; // except here
         ss << test_no;
         if(cases.size() > 1U)
             ss << char('a' + i);

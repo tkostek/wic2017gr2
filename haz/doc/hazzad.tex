@@ -1,0 +1,36 @@
+\documentclass[zad,zawodnik,utf8]{sinol}
+\usepackage{graphicx}
+    \title{Hazard}
+    \id{haz}
+    \signature{tkos-kas}
+    \author{Tomek Kościuszko}
+
+    \pagestyle{fancy}
+    \iomode{stdin}
+    \konkurs{\small{Warsztaty Informatyczne 2017 - grupa 2}}
+
+%     \day{Dzień 123}
+    \date{25.12.2222}
+
+    \RAM{256}
+
+\begin{document}
+\begin{tasktext}%
+    Gdy o późnej godzinie wszystkie grzeczne dzieci już śpią, w zaułkach Bajtockich ulic gromadzą się czarne charaktery. Bywają noce, kiedy z przyjemnością uprawiają hazard. Od niedawna popularnością cieszy się nowa gra - ,,Parka''. Proste zasady i dynamiczna rozgrywka sprawiają, że łatwo wyzbyć się całej gotówki, jaką się posiada.
+
+    W ,,Parce'' rzuca się jedną, $n$ - ścienną kostką. Za każdy rzut klient płaci określoną kwotę. Jeśli w dwóch kolejnych rzutach wypadnie jedynka, gra się kończy i wypłacana jest wcześniej ustalona nagroda. Wydawałoby się, że łatwo zarobić trochę kieszonkowego wchodząc do gry, często okazuje się jednak, że ,,Parka'' nie pojawia się wyjątkowo długo...
+
+    Tom Sromotnik - za dnia spokojny golibroda, w noc przemienia się w miastowego potentata gier hazardowych. Pomóż mu wyznaczyć jaka jest oczekiwana liczba rzutów\footnote{Powiedzmy, że rozegraliśmy $k$ gier, które skończyły się odpowiednio po $a_{1}, a_{2}, ..., a_{k}$ rzutach. Weźmy średnią arytmetyczną tych liczb. Tym większą będziemy wybierać liczbę $k$, tym średnia będzie bliższa oczekiwanej liczbie rzutów} $n$ - ścienną kostką, po których wypada ,,Parka'', tzn. dwie jedynki pod rząd.
+
+\section{Wejście}
+    Na wejściu podana jest jedynie jedna liczba całkowita: $3 \leq n \leq 100$.
+
+\section{Wyjście}
+    Oczekiwana liczba rzutów, dopuszczalny błąd wynosi $10^{-6}$.
+
+
+\makeexample{0}
+
+
+\end{tasktext}
+\end{document}
