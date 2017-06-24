@@ -1,0 +1,36 @@
+\documentclass[zad,zawodnik,utf8]{sinol}
+\usepackage{graphicx}
+    \title{Maraton}
+    \id{mar}
+    \signature{tkos-kas}
+    \author{Tomek Kościuszko}
+
+    \pagestyle{fancy}
+    \iomode{stdin}
+    \konkurs{\small{Warsztaty Informatyczne 2017 - grupa 2}}
+
+%     \day{Dzień 123}
+    \date{25.12.2222}
+
+    \RAM{256}
+
+\begin{document}
+\begin{tasktext}%
+    Bajtocki maraton cieszy się popularnością w całej Europie. Nie tylko dlatego, że można wygrać cenne nagrody oraz podziwiać wspaniałe krajobrazy. Jest to maraton jedyny w swoim rodzaju, ponieważ organizator nie ustala z góry trasy, jaką przebiegną zawodnicy. Mapa ma zawszę postać grafu nieskierowanego i każdy zawodnik indywidualnie wybiera trasę, którą uważa za najbardziej ekonomiczną.
+    Bajtazar startuje w imprezie po raz drugi, niestety rok temu nie ukończył biegu, ponieważ wpadł w cykl i nieświadomie biegał w kółko. W tym roku prosi Cię o pomoc w wyznaczeniu najlepszej trasy. Policz ile zajmie mu dotarcie do mety, o ile pobiegnie w optymalny sposób.
+
+    Mapa maratonu składa się z $n$ punktów orientacyjnych, połączonych $m$ trasami. Start znajduje się w punkcie $1$, meta w $n$. Każda trasa ma swój współczynnik trudności $c$. Ponieważ maraton to bieg wytrzymałościowy i niełatwo jest utrzymać równe tempo. Zakładając, że odcinki pokonywane przez Bajtazara będą miały kolejno trudność $c_{1}, c_{2}, c_{3}, c_{4}, ...$ jego czas wyniesie $1\cdot c_{1} + 2\cdot c_{2} + 1 \cdot c_{3} + 2 \cdot c_{4} + 1\cdot c_{5} ...$
+
+\section{Wejście}
+    W pierwszym wierszu podane są dwie liczby całkowite $2\leq n\leq 10^{5}$, $1\leq m\leq 2 \cdot 10^{5}$.
+    W kolejnych $m$ wierszach opisane są kolejne trasy w postaci trzech liczb całkowitych $1\leq a_{i}, b_{i}\leq n$, $1\leq c_{i}\leq 10^{6}$. Oznacza to, że trasa $i$ łączy punkty orientacyjne $a_{i}$ oraz $b_{i}$, a jej współczynnik trudności wynosi $c_{i}$. Możesz założyć, że da się dobiec z punktu $1$ do punktu $n$, a każda para punktów jest połączona co najwyżej jedną trasą.
+
+\section{Wyjście}
+    Najlepszy czas w jakim Bajtazar może ukończyć maraton.
+
+
+\makeexample{0}
+
+
+\end{tasktext}
+\end{document}
